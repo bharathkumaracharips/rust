@@ -1,4 +1,5 @@
 fn main(){
+    use datatypes::integer_overflow::overflow;
     let mut option = String::new();
     println!("Choose an option :");
     println!("1. If Example");
@@ -12,6 +13,8 @@ fn main(){
     println!("9. Reverse of a Number");
     println!("10. Count Digits in a Number");
     println!("11. Fibonacci series");
+    println!("12. Overflow example");
+    println!("13. Square pattern");
     let _ = std::io::stdin().read_line(&mut option);
     let option: u64 = option.trim().parse().unwrap_or(0);
     if option == 1 {
@@ -38,6 +41,10 @@ fn main(){
         controlflow::problems::count_digits_in_num::digits_count();
     } else if option == 11 {
         controlflow::problems::fibonacci::fib();
+    } else if option == 12 {
+        overflow();
+    } else if option == 13 {
+         controlflow::problems::square_of_stars::square();
     }
     else {
         println!("Invalid option selected.");

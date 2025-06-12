@@ -5,3 +5,10 @@ version = 4
 [[package]]
 name = "controlflow"
 version = "0.1.0"
+dependencies = [
+ "datatypes",
+]
+
+[[package]]
+name = "datatypes"
+version = "0.1.0"

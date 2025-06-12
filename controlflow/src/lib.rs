@@ -18,4 +18,6 @@ pub mod problems{
     pub mod reverse_of_int;
     pub mod count_digits_in_num;
     pub mod fibonacci;
+    pub mod square_of_stars;
 }
+
